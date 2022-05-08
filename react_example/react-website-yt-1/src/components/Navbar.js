@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -31,17 +31,12 @@ function Navbar() {
                 className='nav-services'
                 onClick={closeMobileMenu}
               >
-                Services
+                Products                
               </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/about_us'
-                className='nav-aboutus'
-                onClick={closeMobileMenu}
-              >
-                About Us
-              </Link>
+              <div class="dropdown-content"> 
+                <a href="/#">Horizontální žaluzie</a>
+                <a href="/#">Náhradní díly</a>
+              </div>
             </li>
 
             <li className='nav-item'>
@@ -59,7 +54,7 @@ function Navbar() {
                 to='/cart'
                 className='nav-cart'
                 onClick={closeMobileMenu}
-              ><i className='fas fa-shopping-cart' /> Cart <span className='cartlogo'>0</span>
+              ><i className='fas fa-shopping-cart' />  <span className='cartlogo'>0</span>
               </Link>
             </li>
           </ul>

@@ -3,112 +3,71 @@
     width: 100%; 
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 .blokVnitrek{
-    margin-top: 10px;
     margin-bottom: 10px;
     height: 100%;
     width: 100%; 
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    background-color: rgb(248, 244, 244);    
+    background-color: rgb(248, 244, 244); 
 }
 
-.levy{
-    text-align: left;
-    display: block;
-    float: left;
-    width: 40%;
-    height: auto;
-    margin: 5px;    
-    overflow: hidden;
-}
+.title{width: 100%; height: 2%; }
 
-.levy > h3{
-    margin-top: 5%;
+.title > h3{
+    margin-top: 1%;
     margin-left: 3%;
-    margin-bottom: 5%;   
+    margin-bottom: 1%;   
     color: #0E71B8; 
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
-.popis,
-.jednotka,
-.stahovaniPopis,
-.nazev { 
-    /*vertical-align: inherit;    */
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-}
 
-.popis, .stahovaniPopis, .stahovaniHodnoty{
-    margin-right: 10%;
-    margin-left: 3%;
-}
-
-.sirka > .popis { margin-right: 11%; }
-.vyska > .popis { margin-right: 9.5%; }
-
-.pocet, .sirka, .vyska, .cenaRozmery, .stahovaniPopis, .stahovaniHodnoty, .delkaOvladani{
-    margin-bottom: 3%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.brzda > input {
-    margin-left: 3%;
-}
-
-.brzda {
-    overflow: hidden;
+.stredCol{
     display: flex;
     flex-direction: row;
-}
-
-.brzda > .hodnota > span {
-    color: black;
+    float: left;
+    width: 60%;
+    height: auto;
+    margin: 5px;    
     margin-left: 3%;
-    display: inline-block;
-    width: auto;
+    overflow: hidden;
 }
 
-.stahovaniPopis{margin-bottom: 1%;}
+.stred {
+    background-image: url('/public/images/img-horiz-1.png');
+    background-size: contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 100%;    
+    width: 60%;
+}
+
+.levy{
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    overflow: hidden;
+    justify-content: center;
+}
+
+.popis, .limit, .jednotka, .stahovaniPopis, .nazev { font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }
+.limit { font-size: 14px; }
 
 .sirka > .hodnota,
 .vyska > .hodnota,
-.delkaOvladani > .hodnota {
-    display: inline-block;
-    border-radius: 10px;
-    border: 0 none;
-    color: #434343;
-    background: #0e71b8;
-    width: 160px;
-}
+.pocet > .hodnota{width: 55%;}
 
-.sirka > .hodnota{
-    background: rgb(202, 31, 31);
-}
-.delkaOvladani > .hodnota {
-    background: green;
-}
+.sirka > .popis,
+.vyska > .popis,
+.sirka > .limit,
+.vyska > .limit,
+.pocet > .popis{ width: 52%; }
 
-.pocet > .hodnota{
-    display: inline-block;
-    border-radius: 10px;
-    border: 0 none;
-    color: #434343;
-    background: none;
-    width: 50%;
-    align-content: right;
-}
-
-.cenaRozmery,
-.cenaRozmery > .hodnota >span {
-    color: red;
-    font-weight: 600;
-}
+.cenaRozmery > .popis, .cenaRozmery > .hodnota{width:27%;}
 
 .hodnota > textarea {
     box-sizing: border-box;
@@ -126,104 +85,47 @@
     padding: 5px; /*to try*/
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     overflow: hidden;
+    background-color: #D6D4EE;
 }
 
 .pocet > .hodnota > textarea{
     width: 100px;
     height: 35px;
+    background-color: #D6D4EE;
 }
 
 span > .jednotka {
     position: absolute;
     margin-left: 4px;
     margin-top: 9px;
-    color:white;
+    color:black;
  }
 
- .nazev > .cena {color: red;}
-
-.stahovaniHodnoty > input[type='radio']{
-    display: none;
-}
-
-.stahovaniHodnoty > label {
-    display: inline-block;
-    background-color: #0e71b8;
-    padding: 4px 11px;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 2px;
-    border-radius: 5px;
-    color: white;
-  }
-
-.stahovaniHodnoty > input[type='radio']:checked+label{
-    background-color: rgb(202, 31, 31);
-    border: 1px solid cyan;
-  }
-
-.stredCol{
-    display: block;
-    float: left;
+ .infoCol{
+    display: flex;
     width: 40%;
     height: auto;
     margin: 5px;    
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
-.stred {
-    content: url('/public/images/img-horiz.jpg');
-    width: auto; 
-    height: auto;    
-    margin: auto;
-    margin-top: 40%;
-}
+.info { width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 
-.infoCol{
-    display: block;
-    float: right;
-    width: 60%;
-    height: auto;
-    margin: 5px;    
-    overflow: hidden;
-}
-
-.info {
-    width: auto; 
-    height: auto;    
-    margin: auto;
-    margin-top: 20%;
-}
-
-.info > div,
-.info > ul{    
-    margin-left: 5%;
+.info > .info_Text{  
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     list-style: none;
-    /*text-align: center;*/
+    width: 70%;
 }
-.info > ul > li::before {
-    content: "\2023";
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: 5%;
-  }
-
-.info > ul > li:hover { color:unset;}
-
-.one { color: rgb(202, 31, 31);}
-.two { color: #0e71b8;}
-.three { color: green;}
 
 .info > div > a{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 32px;
     margin-bottom: 3px;
     text-align: center;
-    width: 270px;
-    border: 1px solid red;
+    width: 60%;
+    border: 1px solid #a21313;
     text-decoration: none;
     display: inline-block;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -232,65 +134,158 @@ span > .jednotka {
     color: black;
 }
 
-.info > div > a:hover{
-    background-color: lightgreen;
-    color: red;
+.info > div > a:hover{ background-color: #a21313; color: white; }
+
+.info_Button { display: flex; justify-content: center; width: 100%; }
+
+.pocet,.sirka, .vyska{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;    
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
 }
 
-.lastTwoCol{
+.cenaRozmery{ 
+    display: flex;
+    margin-top: 5%;    
+    align-items: center;
+    justify-content: center;
+    color: red; 
+    font-weight: 600;
+    margin-bottom: 5%; 
+   }
+
+/*---------------------------------------------------------------------*/
+
+.further_options{
     display: flex;
     flex-direction: row;
-    float: right;
-    width: 60%;
-    height: auto;
-    margin: 5px;    
-    overflow: hidden;}
-
-@media screen and (max-width: 625px) {
-.blokVnitrek{ width:auto; height:auto;
-              flex-direction: column; justify-content: center; 
-            }
-.levy{ width: auto; height: auto; }
-.stred { justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid red;
 }
 
-@media screen and (max-width: 980px) { 
-    .levy{ width: 50%; margin: auto;}
-    .stred, .info { margin: auto; }
-    .lastTwoCol{flex-direction: column;} 
-    .info > div, .info > ul{ text-align: center;}
-    .stredCol, .infoCol{ width: 100%; margin-top: 40px; }}
-
-@media screen and (max-width: 625px) { 
-    .levy, .lastTwoCol, .stredCol, .infoCol{ width: 98%; } 
-    .stred{margin-top: auto;}
-    .info{margin-top: auto;}
+.radio_cell{
+    width: 33.33%;
+    border: 1px solid blue;
 }
 
-@media screen and (max-width: 330px) {
-    .levy{ font-size: 15px; }
-    .hodnota > textarea{ width: 90px; height: 30px; }
-    .pocet > .hodnota > textarea{ width: 85px; height: 30px; } }
+.radio_cell > .stahovaniPopis {
+    font-weight: bolder; 
+    font-size: 18px;
+    color: rgb(14, 113, 184); 
+    border: 1px solid red; 
+    margin-bottom: 2%;
+    margin-left: 20%;
+    width: 150px;
+}
 
-@media screen and (max-width: 280px) {
-    .hodnota > textarea{ width: 70px; }
-    .pocet > .hodnota > textarea{ width: 70px; }
+.stahovaniHodnoty{
+    display: flex;
+    align-items: center;
+    overflow: hidden;   
+    width: 195px;
+    margin-left: 20%;
+    border: 1px solid red; 
 }
-@media screen and (max-width: 240px) {
-    .hodnota > textarea{ height: 40px; }
-    .pocet > .hodnota > textarea{ height: 40px; }
+.delkaOvladani{
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid red;
+    flex-direction: column; 
+    width: 33.33%;}
+
+.delkaOvladani > .popis { margin: 0%;} 
+
+.brzda > input {
+    margin-left: 3%;
 }
-/*@media screen and (max-width: 930px) {
-    .info > div > a{
-        width: 240px;
-        font-size: 10px;
+
+.brzda {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 33.33%;
+    height: fit-content ;
+}
+
+.brzda > .hodnota > span {
+    color: black;
+    margin-left: 3%;
+    display: inline-block;
+    width: auto;
+}
+
+.delkaOvladani > .hodnota {
+    display: inline-block;
+    border: 0 none;
+    color: #434343;
+    width: 160px;
+}
+
+ .nazev > .cena {color: red;}
+
+  .vlevo,
+  .vpravo {
+    height:85px;
+    width:85px;
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.vlevo{ margin-right: 20px; }
+
+.vlevo{background-image: url('/public/images/ct1.png');}
+.vpravo{background-image: url('/public/images/ct2.png');}
+
+.hh1{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    width:100%;
+    margin-right: 20px;
+    align-items: center;
+    text-align: center;
     }
-}*/
 
-@media screen and (max-width: 320px) {
-    .info > div > a{ width: 200px; font-size: 10px; }
-    .info > div, .info > ul{ text-align: left;}
+
+@media screen and (max-width: 830px) {
+    .hodnota > textarea{ width: 70px; height: 30px; font-size: 15px; }
+    .jednotka{ font-size: 15px; }
+    .pocet > .hodnota > textarea { width: 70px; height: 30px; }
+    .limit{ font-size: 12px; }
+
+    .cenaRozmery > .hodnota, 
+    .cenaRozmery > .popis, 
+    .pocet > .popis,
+    .sirka > .popis, 
+    .vyska > .popis{ font-size: 15px;}   
+    .info{width: 100%;} 
 }
-@media screen and (max-width: 250px) {.info > div > a{ width: 150px; font-size: 8px; }}
-@media screen and (max-width: 180px) {.info > div > a{ width: 100px; font-size: 6px; }}
-@media screen and (min-width: 1150px) {.stred{width: 90%; margin-top: 20%;}}
+
+@media screen and (max-width: 692px) {
+    .blokVnitrek{flex-direction: column;}
+    .infoCol, .stredCol{width: 100%;}
+    .stred, .levy{width: 50%;}     
+    .stred { height: 290px; }
+    .infoCol{margin-top: 5%;}
+}
+
+@media screen and (min-width: 785px) and (max-width: 804px){   .info_Text{text-align: center;} }
+@media screen and (min-width: 831px) and (max-width: 999px){   .info_Text{text-align: center;} }
+@media screen and (max-width: 480px){   
+    .stredCol{flex-direction: column;} 
+    .stred, .levy{width: 95%;}
+    .levy{width: 95%; justify-content: center;}
+    
+    .sirka > .hodnota, .vyska > .hodnota, .pocet > .hodnota{width: 30%;}
+    .sirka > .popis, .vyska > .popis, .sirka > .limit, .vyska > .limit, .pocet > .popis{ width: 27%;}
+    
+    .cenaRozmery > .popis, .cenaRozmery > .hodnota{width:15%;}
+}
