@@ -1,10 +1,13 @@
 .cards1 {
-    padding: 4rem;
+    padding: 1rem;
     background: rgb(240, 237, 237);
   }
   
   h1 {
     text-align: center;
+    color: #4361aa;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   .cards__container {
