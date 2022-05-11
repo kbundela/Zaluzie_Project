@@ -17,7 +17,7 @@
 
 .firstPic, .secondPic, .thirdPic { width: 33.3333%; }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 912px) {
 
   .threepiccontainer{ flex-direction: column; margin-top: 10%;}
 
