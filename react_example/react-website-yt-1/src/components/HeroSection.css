@@ -10,6 +10,7 @@
   font-size: 50px;
   margin-bottom: 5%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
 }
 
 .front_cards {
@@ -24,9 +25,11 @@
 .front_cards_1, 
 .front_cards_2 { 
   display: flex; flex-direction: row; 
-  margin-bottom: 5%; 
+  margin-bottom: 5%; /*
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  align-items: stretch; /*stretches all cards same height*/
+  justify-content: space-around; /*some space between cards*/
 }
 
 .firstCard,
@@ -35,8 +38,8 @@
 .fourthCard,
 .fifthCard,
 .sixthCard{ 
-  width: 25%;
-  height: 40vh;
+  width: 25%;/*
+  height: 40vh;*/
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -107,6 +110,7 @@
   align-items: center;
   justify-content: center;  
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10%;
 }
 
 @media screen and (max-width: 960px) {.hero-container > h1 {font-size: 55px; }}
@@ -154,3 +158,15 @@
 @media screen and (max-width: 370px){
   .firstCard, .secondCard, .thirdCard, .fourthCard, .fifthCard, .sixthCard{ width: 85%;}
 }
+/*
+@media screen and (min-height: 550px){
+  
+.firstCard,
+.secondCard,
+.thirdCard,
+.fourthCard,
+.fifthCard,
+.sixthCard{ 
+  height: 30vh;
+}
+}*/
