@@ -16,22 +16,22 @@ const handleChange1 = (e) => {
 const handleChange2 = (e) => {
     const value = e.target.value.replace(/\D/g, "");
     setAge2(value);
-  };
+};
 
 const handleChange3 = (e) => {
     const value = e.target.value.replace(/\D/g, "");
     setAge3(value);
-  };
+};
 
 const handleChange4 = (e) => {
     const value = e.target.value.replace(/\D/g, "");
     setAge4(value);
-  };
+};
 
   return (
-            <div className='horiz-container'>   
-                <div className='title'><h3>ISOLINE PRIM</h3></div>      
-                <div className='blokVnitrek'>                
+        <div className='horiz-container'>   
+            <div className='title'><h3>ISOLINE PRIM</h3></div>      
+            <div className='blokVnitrek'>                
                     <div className="stredCol">
                         <div className="stred"> </div>
                     
@@ -73,32 +73,56 @@ const handleChange4 = (e) => {
                     </div>
                     </div></div>
 
-                    <div className="infoCol">
+                <div className="infoCol">
                     <div className="info">
                         <div className="info_Text">
-                            Maximální rozměry naleznete v sekci TECHNICKÝ POPIS <br /> <br />Dodací lhůta je 7-9 dnů. <br /> <br />
+                            Přicházíme na trh s novou generací ISOLINE žaluzií. Tato žaluzie je koncepčně novým nástupcem generace žaluzií ISOLINE a ISOLINE LOCO. Spojuje v sobě všechny technické přednosti těchto typů. Díky spojení horního profilu a krycí lišty v jeden celek vzniklo kompaktní řešení, které odstraňuje neduhy předchozích generací. Je ovládaná řetízkem a nabízí tradiční barevnou škálu odstínů lamel, barevného sladění horního a dolního profilu.
+                                <br /><br />
+                            Horizontální žaluzie stále představují nejrozšířenější způsob protisluneční ochrany a staly se nedílnou součástí interiéru, ochraňují nejen proti slunečním paprskům, regulují světlo v místnosti, ale chrání i vaše soukromí. Využití horizontálních žaluzií je mnohostranné a jejich barevná škála dovoluje harmonicky sladit barvy v místnosti s barevnými doplňky a vytvořit tak příjemnou atmosféru dle vašeho vkusu. Výhodou je jejich jednoduchost, rychlost montáže, minimální údržba a cenová dostupnost.
+                                <br /><br />
+                            Horizontální žaluzii lze zaměřit pomocí návodu.<br />Šíře výrobku je šíře lamel, horní držáky přesahují tuto šíři na každé straně o 35 mm.
+                                <br /><br />
+                            Důležitá je hloubka zasklívací lišty. V případě, že je menší nez 19 mm, je nutné doobjednat speciální vymezovací podložky. Žaluzie se musí v okně volně pohybovat! 
+                                <br /><br />
+                            <b>Pozor některá okna nemusí být zcela rovná, měřte proto šířku v různých výškách.</b>
+                                <br /><br />
                         </div>
-                        
-                        <div>&nbsp;</div>
-                        <div className="info_Button">
-                            <a href="https://www.zaluzienejlevneji.shop/Instance/lukyshop/Sablona/Sablona/Komponenta/Luky/Detail/Slozka23/Cenik/CZ_Navod_na_vymereni_a_montaz.pdf">
-                                NÁVOD NA ZAMĚŘENÍ A MONTÁŽ
-                            </a>
+                        <div className='manual_and_contact'>
+                           <span>
+                           Pro správné určení rozměrů se podívejte na <a className='first_link' href="https://www.google.com/">video návod</a> nebo si přečtěte <a className='second_link' href="https://www.google.com/">návod zaměření</a>.     
+                                <br />
+                                Pokud si chcete objednat zaměření naším technikem, pak nás neváhejte <a className='third_link' href="https://www.google.com/">kontaktovat</a>.
+                            </span> 
                         </div>
-                        <div className="info_Button">
-                            <a href="https://www.zaluzienejlevneji.shop/technicky-popis-s33CZ">
-                                TECHNICKÝ POPIS
-                            </a>
-                        </div>
-                        <div className="info_Button">
-                            <a href="https://www.zaluzienejlevneji.shop/fotogalerie-s65CZ">
-                                FOTOGALERIE
-                            </a>
-                        </div>
-                    </div>
-                    </div> 
 
-                </div>
+                        <div className='ph_contact'>
+                            <span className='contact_span'> 
+                                Nevíte si rady se zaměřením? Máte jiný požadavek? <br /> Volejte <b>+420 777 292 384</b>
+                            </span> 
+                            <i class="fa fa-phone"></i>
+                        </div>
+
+                        <div className='links'>
+                            <ul>
+                                <li className='link_one'>
+                                <i class="fa fa-caret-right"></i> <a href="https://www.google.com/">Video návod na zaměření</a>
+                                </li>
+                                <li>
+                                <i class="fa fa-caret-right"></i> <a href="https://www.google.com/">Video návod na montáž</a>
+                                </li>
+                                <li className='link_three'>
+                                <i class="fa fa-caret-right"></i> <a href="https://www.google.com/">Návod na zaměření [PDF]</a>
+                                </li>
+                                <li>
+                                <i class="fa fa-caret-right"></i> <a href="https://www.google.com/">Návod na údržbu</a>
+                                </li>
+                            </ul> 
+                        </div>
+
+                    </div>
+                </div> 
+
+            </div>
                 <div className = 'further_options'>                         
                     <div className='radio_cell'>                
                         <div className="stahovaniPopis"> Strana ovládání </div>                    
@@ -143,8 +167,8 @@ const handleChange4 = (e) => {
                         </label>
                     </div>
                 </div>
-            </div>
-        );
+        </div>
+    );
 }
 
 export default Horiz;
