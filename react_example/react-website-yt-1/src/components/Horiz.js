@@ -148,16 +148,17 @@ const handleChange4 = (e) => {
                             </label>
                             </div>                        
                         </div> 
-                    </div>                       
-                    <div className="delkaOvladani">
+                    </div>        
+                    <div className="delka_brzda">               
+                      <div className="delkaOvladani">
                         <span className="popis">Délka ovládání</span>
                         <span className="hodnota">
                             <textarea type="text" className="hodnota" defaultValue="700" value={age4} name="delkaOvladani"
                                     maxLength="4" onChange={handleChange4} onKeyDown="LUKY.prepocitejCenu()"/>
                             <span className="jednotka">mm</span>
                         </span>
-                    </div>
-                    <div className="brzda">
+                      </div>
+                      <div className="brzda">
                         <input type="checkbox" name="brzda" id="brzda" onChange="LUKY.prepocitejCenu();"/>
                         <label htmlFor="brzda" className="hodnota">
                             <span className="nazev">
@@ -165,6 +166,7 @@ const handleChange4 = (e) => {
                                 <span className="cena"><br /> +25 CZK </span>
                             </span>
                         </label>
+                      </div>
                     </div>
                 </div>
         </div>
