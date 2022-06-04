@@ -41,7 +41,7 @@ const handleChange4 = (e) => {
                         <div className="hodnota">
                             <textarea type="text" className="hodnota" defaultValue="1" value={age1} id="pocet"
                                    name="pocet" maxLength="4" onChange={handleChange1} 
-                                   onKeyDown="LUKY.prepocitejCenu()" autoComplete="off"/>
+                                   autoComplete="off"/>
                         </div>
                     </div>
                     <div className="sirka">
@@ -49,7 +49,7 @@ const handleChange4 = (e) => {
                         <span className="hodnota">
                             <textarea type="text" className="hodnota" defaultValue="0" value={age2} id="sirka" 
                                    name="sirka" maxLength="4" onChange={handleChange2} 
-                                   onKeyDown="LUKY.prepocitejCenu()" autoComplete="off"/>
+                                   autoComplete="off"/>
                                 <span className="jednotka">mm</span>
                         </span>
                         <span className="limit">300 - 2000 mm</span>
@@ -59,7 +59,7 @@ const handleChange4 = (e) => {
                         <span className="hodnota">
                             <textarea type="text" className="hodnota" defaultValue="0" value={age3} id="vyska" 
                                    name="vyska" maxLength="4" onChange={handleChange3}
-                                   onKeyDown="LUKY.prepocitejCenu()" autoComplete="off" />
+                                   autoComplete="off" />
                             <span className="jednotka">mm</span>
                         </span>
                         <span className="limit">300 - 2200 mm</span>
@@ -99,22 +99,22 @@ const handleChange4 = (e) => {
                             <span className='contact_span'> 
                                 Nevíte si rady se zaměřením? Máte jiný požadavek? <br /> Volejte <b>+420 777 292 384</b>
                             </span> 
-                            <i class="fa fa-phone"></i>
+                            <i className="fa fa-phone"></i>
                         </div>
 
                         <div className='links'>
                             <ul>
                                 <li className='link_one'>
-                                <i class="fa fa-caret-right"></i> <a href="https://www.google.com/">Video návod na zaměření</a>
+                                <i className="fa fa-caret-right"></i> <a href="https://www.google.com/">Video návod na zaměření</a>
                                 </li>
                                 <li>
-                                <i class="fa fa-caret-right"></i> <a href="https://www.google.com/">Video návod na montáž</a>
+                                <i className="fa fa-caret-right"></i> <a href="https://www.google.com/">Video návod na montáž</a>
                                 </li>
                                 <li className='link_three'>
-                                <i class="fa fa-caret-right"></i> <a href="https://www.google.com/">Návod na zaměření [PDF]</a>
+                                <i className="fa fa-caret-right"></i> <a href="https://www.google.com/">Návod na zaměření [PDF]</a>
                                 </li>
                                 <li>
-                                <i class="fa fa-caret-right"></i> <a href="https://www.google.com/">Návod na údržbu</a>
+                                <i className="fa fa-caret-right"></i> <a href="https://www.google.com/">Návod na údržbu</a>
                                 </li>
                             </ul> 
                         </div>
@@ -129,20 +129,19 @@ const handleChange4 = (e) => {
                         <div className="stahovaniHodnoty">
                             <div>                        
 			                <label>
-                                <div class = 'vlevo'/>
-                                <div class = 'hh1'>
+                                <div className = 'vlevo'/>
+                                <div className = 'hh1'>
                                     <input type="radio" name={'ovladani'} id={'vlevo'} value={'vlevo'}
-                                        defaultChecked ={'true'} onChange="LUKY.prepocitejCenu()"/>
+                                        defaultChecked ={'true'}/>
                                     <span>vlevo</span>      
                                 </div>                      
                             </label>
                             </div>
                             <div>                        
 			                <label>
-                                <div class = 'vpravo'/>
-                                <div class = 'hh1'>
-                                    <input type="radio" name={'ovladani'} id={'vpravo'} value={'vpravo'}
-                                        onChange=""/>
+                                <div className = 'vpravo'/>
+                                <div className = 'hh1'>
+                                    <input type="radio" name={'ovladani'} id={'vpravo'} value={'vpravo'}/>
                                     <span>vpravo</span>      
                                 </div>                      
                             </label>
@@ -154,12 +153,12 @@ const handleChange4 = (e) => {
                         <span className="popis">Délka ovládání</span>
                         <span className="hodnota">
                             <textarea type="text" className="hodnota" defaultValue="700" value={age4} name="delkaOvladani"
-                                    maxLength="4" onChange={handleChange4} onKeyDown="LUKY.prepocitejCenu()"/>
+                                    maxLength="4" onChange={handleChange4} />
                             <span className="jednotka">mm</span>
                         </span>
                       </div>
                       <div className="brzda">
-                        <input type="checkbox" name="brzda" id="brzda" onChange="LUKY.prepocitejCenu();"/>
+                        <input type="checkbox" name="brzda" id="brzda" />
                         <label htmlFor="brzda" className="hodnota">
                             <span className="nazev">
                                 Brzda (zastaví žaluzii v požadované poloze/zabrání samovolnému sjíždění)

@@ -33,7 +33,7 @@ function Navbar() {
               >
                 Products                
               </Link>
-              <div class="dropdown-content"> 
+              <div className="dropdown-content"> 
                 <a href="/#">Horizontální žaluzie</a>
                 <a href="/#">Náhradní díly</a>
               </div>
