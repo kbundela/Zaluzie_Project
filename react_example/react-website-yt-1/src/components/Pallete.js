@@ -86,25 +86,33 @@ function Pallete() {
     const form88 = () => { document.getElementById('amount_2').innerText ='215' }
     const form89 = () => { document.getElementById('amount_2').innerText ='215' }
 
-    window.onload = function() {
-    var modal = document.getElementsByClassName("modal")[0];
-    var modalImg = document.getElementById("modal-img");
-
-    document.addEventListener("click", (e) => {
-        const elem = e.target;
-        if (elem.className ==="label_class_1") {
-          modal.style.display = "block"; 
-          modalImg.src =require('../images/bílá_lesklá.jpg') ;
-        }
-      })
-
     
-        var span = document.getElementsByClassName("close")[0];
-        span.onClick = function() { modal.style.display = "none"; }
+    
+
+    function label_1_click() {
+        var modal = document.getElementsByClassName("modal")[0];
+        var modalImg = document.getElementById("modal-img");
+        /* window.location.reload();
+        const elem = e.target;
+        if (elem.className ==="label_class_1") {*/
+        modal.style.display = "block"; 
+        modalImg.src =require('../images/bílá_lesklá.jpg') ;
+        
     }
+
+    function close() {
+        var modal = document.getElementsByClassName("modal")[0];
+        modal.style.display = "none";           
+    }      
 
     return (
         <div className='pallete_container'>
+            
+            <div id="myModal" className="modal">
+                <span className="close" onClick={close}>&times;</span>
+                <img id="modal-img" className="modal-content" alt='pop-up'/>  
+            </div>
+
             <div className='pallete1'>
                 <div className='titleBar_1'>
                 
@@ -115,7 +123,7 @@ function Pallete() {
             {/*------------------------------------------------------------------------------------*/}
                     <div>                        
 			            <label>
-                            <div className = 'label_class_1'/>
+                            <div className = 'label_class_1' onClick={label_1_click}/>
                             <div className = 'hh'>
                                 <input type="radio" name="palleteInput" id="1" value="0001-bílá lesklá" onClick={form1}/>
                                 <span>bílá lesklá</span>      
@@ -933,11 +941,6 @@ function Pallete() {
                         </label>
                     </div>
             </div>
-            </div>
-
-            <div id="myModal" className="modal">
-                <span className="close">&times;</span>
-                <img id="modal-img" className="modal-content" alt='pop-up'/>  
             </div>
 
             <div className='formOptions'>
